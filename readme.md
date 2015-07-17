@@ -1,6 +1,8 @@
 python nighthack - sportstats scraper rewrite
 pnssr
 
+see build.txt
+
 http://www.sportstats.ca/display-results.xhtml?raceid=25143
 
 ?css selector - almost right
@@ -12,8 +14,7 @@ http://www.sportstats.ca/display-results.xhtml?raceid=25143
 		var athleteTime = $(row).find('td').last().text();
 </code>
 
-	
-virtualenv 
+virtualenv
 pip -> Splinter
 
 ---splinter fun!---
@@ -23,7 +24,7 @@ pip -> Splinter
 <code>
 	from splinter import Browser
 
-	browser = Browser()    
+	browser = Browser()
 	# Visit URL
 	url = "http://www.google.com"
 	browser.visit(url)
